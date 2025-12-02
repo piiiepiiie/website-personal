@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -19,10 +19,15 @@ body {
 }
 
 .menu-btn {
+    position: absolute;
+    right: 20px;  
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 22px;
     cursor: pointer;
-    color: #4a4a4a;
-    padding-right: 10px;
+    color: #4a4a4a;
+}
+
 }
 .side-menu {
     width: 190px;
