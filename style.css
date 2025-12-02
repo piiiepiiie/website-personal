@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: yellow; /* kuning lembut */
+    background: #fff4c2; /* kuning soft */
 }
 
 .topnav {
-    background: #ffca3a;
-    color: white;
+    background: #ffe99a; /* kuning soft navbar */
+    color: #4a4a4a;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -15,26 +15,27 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9999; /* AGAR DI DEPAN */
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .menu-btn {
     font-size: 22px;
     cursor: pointer;
-    z-index: 10000; /* TOMBOL PALING DEPAN */
-    position: relative;
+    color: #4a4a4a;
 }
 
 .side-menu {
     width: 190px;
-    background: #ffca3a;
+    background: #ffe99a;
     height: 100vh;
     position: fixed;
     top: 0;
     left: -210px;
     padding-top: 80px;
     transition: 0.4s;
-    z-index: 9000; /* BIAR DI BAWAH NAVBAR */
+    z-index: 9000;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.15);
 }
 
 .side-menu.show {
@@ -44,48 +45,47 @@ body {
 .side-menu a {
     display: block;
     padding: 15px;
-    color: white;
+    color: #4a4a4a;
     text-decoration: none;
+    font-size: 17px;
     transition: 0.3s;
 }
 
 .side-menu a:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .home {
     text-align: center;
-    padding: 40px 0;
-    background: #2b78ff; /* biru */
-    color: white;
+    padding: 120px 20px 40px;
+    background: #a9d6ff; /* biru pastel lembut */
+    color: #4a4a4a;
 }
 
 .gambar-oval img {
-    width: 80%;
+    width: 160px;
     border-radius: 50%;
-    border: 5px solid #f4e77d; /* kuning */
+    border: 5px solid #ffe99a; /* kuning soft */
 }
 
-.about,
-.galery,
-.contact {
-    padding: 30px;
+.about, .galery, .contact {
+    padding: 40px 20px;
     text-align: center;
+    color: #4a4a4a;
 }
 
 .galery {
-    background: #2b78ff; /* biru */
-    color: white;
+    background: #a9d6ff;
 }
 
 .card {
-    background: white;
+    background: #ffffff;
     padding: 10px;
     margin: 15px auto;
     border-radius: 12px;
     width: 90%;
     transition: 0.3s;
-    border: 2px solid #f4e77d; /* aksen kuning */
+    border: 2px solid #ffe99a;
 }
 
 .card:hover {
@@ -104,23 +104,28 @@ body {
     margin: 8px 0;
     border: none;
     border-radius: 6px;
-    background: #fff8c6; /* kuning muda */
+    background: #fff7d1;
 }
 
 .contact button {
     padding: 10px 20px;
-    background: #f4c400; /* kuning terang */
+    background: #ffd860;
     border: none;
     border-radius: 6px;
-    color: black;
+    color: #4a4a4a;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #ffcd49;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #2b78ff; /* biru */
-    color: white;
+    background: #a9d6ff;
+    color: #4a4a4a;
 }
 
 .fade {
