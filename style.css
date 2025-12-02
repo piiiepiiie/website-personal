@@ -11,29 +11,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto;      
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 9999;
+    width: 100%;
+    z-index: 9999;
 }
 
 .menu-btn {
     font-size: 24px;
     cursor: pointer;
     color: #4a4a4a;
-    margin-right: 5px;  
 }
 
-}
 .side-menu {
     width: 190px;
     background: #ffe99a;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -210px;
+    left: -200px;
     padding-top: 80px;
     transition: 0.4s;
     z-index: 9000;
@@ -50,36 +46,27 @@ body {
     color: #4a4a4a;
     text-decoration: none;
     font-size: 17px;
-    transition: 0.3s;
 }
 
 .side-menu a:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255,255,255,0.4);
 }
 
 .home {
     text-align: center;
-    padding: 120px 20px 40px;
-    background: #a9d6ff; 
+    padding: 140px 20px 40px;
+    background: #a9d6ff;
     color: #4a4a4a;
 }
 
-.gambar-oval img {
-    width: 160px;
-    border-radius: 50%;
-    border: 5px solid #fff4c2
-}
-
-.about, 
-.contact {
-    padding: 80px 20px;  
+.about, .galery, .contact {
+    padding: 40px 20px;
     text-align: center;
-    background: #ffe99a;  
-    color: #4a4a4a;
+    color: #4a4a4a;
 }
 
 .galery {
-    background: #a9d6ff; /* tetap biru */
+    background: #a9d6ff;
 }
 
 .card {
@@ -88,8 +75,8 @@ body {
     margin: 15px auto;
     border-radius: 12px;
     width: 90%;
-    transition: 0.3s;
     border: 2px solid #ffe99a;
+    transition: 0.3s;
 }
 
 .card:hover {
