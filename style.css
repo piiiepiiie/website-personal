@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #fff4c2; /* kuning soft */
+    background: #fff4c2;
 }
 
 .topnav {
-    background: #ffe99a; /* kuning soft navbar */
+    background: #ffe99a;
     color: #4a4a4a;
-    padding: 15px;
+    padding: 15px 25px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +16,14 @@ body {
     top: 0;
     left: 0;
     z-index: 9999;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .menu-btn {
     font-size: 22px;
     cursor: pointer;
     color: #4a4a4a;
+    padding-right: 10px;
 }
-
 .side-menu {
     width: 190px;
     background: #ffe99a;
@@ -58,14 +57,14 @@ body {
 .home {
     text-align: center;
     padding: 120px 20px 40px;
-    background: #a9d6ff; /* biru pastel lembut */
+    background: #a9d6ff; 
     color: #4a4a4a;
 }
 
 .gambar-oval img {
     width: 160px;
     border-radius: 50%;
-    border: 5px solid #ffe99a; /* kuning soft */
+    border: 5px solid #fff4c2
 }
 
 .about, .galery, .contact {
@@ -118,7 +117,7 @@ body {
 }
 
 .contact button:hover {
-    background: #ffcd49;
+    background: #fff4c2;
 }
 
 footer {
