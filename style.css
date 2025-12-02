@@ -95,7 +95,7 @@ body {
 .contact-section {
     padding: 50px 20px;
     margin-top: 40px;
-    margin-bottom: 80px; /* JARAK DARI FOOTER */
+    margin-bottom: 80px; 
     background: #fffbe6;
     text-align: center;
     border-radius: 12px;
@@ -105,5 +105,5 @@ footer {
     text-align: center;
     padding: 25px;
     background: #a9d6ff;
-    margin-top: 20px; /* JARAK FOOTER */
+    margin-top: 20px; 
 }
