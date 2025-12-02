@@ -5,28 +5,36 @@ body {
 }
 
 .topnav {
-    background: #2b78ff; /* biru */
+    background: #ffca3a;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* AGAR DI DEPAN */
 }
 
 .menu-btn {
     font-size: 22px;
     cursor: pointer;
+    z-index: 10000; /* TOMBOL PALING DEPAN */
+    position: relative;
 }
 
 .side-menu {
     width: 190px;
-    background: #2b78ff; /* biru */
+    background: #ffca3a;
     height: 100vh;
     position: fixed;
     top: 0;
     left: -210px;
     padding-top: 80px;
     transition: 0.4s;
+    z-index: 9000; /* BIAR DI BAWAH NAVBAR */
 }
 
 .side-menu.show {
