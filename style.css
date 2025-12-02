@@ -12,28 +12,26 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 9999;
+    top: 0;
+    z-index: 1000;
 }
 
 .menu-btn {
     font-size: 24px;
     cursor: pointer;
-    color: #4a4a4a;
 }
 
 .side-menu {
-    width: 190px;
+    width: 180px;
     background: #ffe99a;
     height: 100vh;
     position: fixed;
     top: 0;
     left: -200px;
     padding-top: 80px;
-    transition: 0.4s;
-    z-index: 9000;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
 }
 
 .side-menu.show {
@@ -45,42 +43,36 @@ body {
     padding: 15px;
     color: #4a4a4a;
     text-decoration: none;
-    font-size: 17px;
-}
-
-.side-menu a:hover {
-    background: rgba(255,255,255,0.4);
 }
 
 .home {
     text-align: center;
-    padding: 140px 20px 40px;
+    padding: 140px 20px 60px;
     background: #a9d6ff;
-    color: #4a4a4a;
 }
 
-.about, .galery, .contact {
+.profile {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.section {
     padding: 40px 20px;
     text-align: center;
-    color: #4a4a4a;
 }
 
-.galery {
+.blue {
     background: #a9d6ff;
 }
 
 .card {
-    background: #ffffff;
-    padding: 10px;
-    margin: 15px auto;
-    border-radius: 12px;
     width: 90%;
+    background: white;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 12px;
     border: 2px solid #ffe99a;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.03);
+    transition: .3s;
 }
 
 .card img {
@@ -88,51 +80,17 @@ body {
     border-radius: 10px;
 }
 
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 6px;
-    background: #fff7d1;
+.card:hover {
+    transform: scale(1.03);
 }
 
-.contact button {
-    padding: 10px 20px;
-    background: #ffd860;
-    border: none;
-    border-radius: 6px;
-    color: #4a4a4a;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background: #fff4c2;
+.ig {
+    font-size: 36px;
+    color: #d62976;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #a9d6ff;
-    color: #4a4a4a;
-}
-
-.fade {
-    animation: fadeIn 1.2s ease;
-}
-
-.slide-up {
-    animation: slideUp 1s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    background: #a9d6ff;
 }
