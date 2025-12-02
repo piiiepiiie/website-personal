@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eba4bf;
+}
+
+.topnav {
+    background: #ff80c8;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.side-menu {
+    width: 190px;
+    background: #ff80c8;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -210px;
+    padding-top: 80px;
+    transition: 0.4s;
+}
+
+.side-menu.show {
+    left: 0;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.home {
+    text-align: center;
+    padding: 40px 0;
+    background: #5aa8ff;
+    color: white;
+}
+
+.gambar-oval img {
+    width: 80%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.about,
+.galery,
+.contact {
+    padding: 30px;
+    text-align: center;
+}
+
+.galery {
+    background: #5aa8ff;
+    color: white;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 12px;
+    width: 90%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #ff80c8;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5aa8ff;
+    color: white;
+}
+
+.fade {
+    animation: fadeIn 1.2s ease;
+}
+
+.slide-up {
+    animation: slideUp 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
