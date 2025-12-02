@@ -1,0 +1,203 @@
+/* ===== base ===== */
+:root{
+  --pink-1: #ffd7ea;   /* light */
+  --pink-2: #ff9ac9;   /* mid */
+  --purple-1: #6b2b7f; /* deep footer */
+  --accent: #a04abf;   /* gradient mid */
+  --bg: #fff7fb;
+  --card-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  --radius: 12px;
+  --max-width: 980px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* TOP NAV */
+.topnav{
+  position:fixed;
+  left:0;right:0;top:0;
+  height:56px;
+  background: linear-gradient(90deg,var(--accent), var(--purple-1));
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 16px;
+  z-index:1200;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.topnav .brand{ font-weight:600; font-size:18px; }
+.menu-btn{
+  background: rgba(255,255,255,0.12);
+  color:#fff;
+  border: none;
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* SIDE MENU - mobile slide */
+.side-menu{
+  position:fixed;
+  top:56px;
+  left:-260px;
+  width:220px;
+  height:calc(100vh - 56px);
+  background: linear-gradient(180deg,#7f3fa8,#6b2b7f);
+  color:white;
+  padding:14px;
+  transition: left .35s ease;
+  z-index:1199;
+}
+.side-menu.show{ left:0; }
+.side-menu a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:12px 10px;
+  border-radius:8px;
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+/* HERO / HOME */
+.home{
+  padding-top:80px; /* leave space for fixed nav */
+  text-align:center;
+  background: linear-gradient(180deg,#ffbfdc 0%, #ff9ac9 45%, #ffd7ea 100%);
+  color: #fff;
+  position:relative;
+  overflow:hidden;
+}
+.home .hero-inner{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px 20px 10px;
+}
+.gambar-oval{
+  width: 88%;
+  margin: 6px auto;
+  display:inline-block;
+  border-radius: 50% / 40%;
+  overflow:hidden;
+  border:6px solid rgba(255,255,255,0.95);
+  box-shadow: var(--card-shadow);
+}
+.gambar-oval img{
+  width:100%;
+  height: auto;
+  display:block;
+  object-fit:cover;
+}
+
+/* headings */
+.home h1{
+  margin:14px 0 6px;
+  font-size:26px;
+  color:white;
+}
+.subtitle{
+  margin:0 0 10px;
+  opacity:.95;
+  font-size:14px;
+}
+
+/* waves */
+.wave1{ display:block; width:100%; margin-top:12px; }
+
+/* ABOUT */
+.about{
+  background: var(--pink-1);
+  padding:32px 18px;
+  text-align:center;
+}
+.about h2{ margin-top:0; font-size:22px; color:#2b1b35; }
+.about p{ max-width:760px; margin:12px auto; line-height:1.6; color:#222; }
+
+/* GALERY */
+.galery{
+  background: linear-gradient(180deg, #ff9ac9 0%, #ffd7ea 100%);
+  padding:28px 16px 40px;
+  text-align:center;
+}
+.galery h2{ color:#2b1b35; margin-bottom:12px; }
+.cards{
+  max-width: var(--max-width);
+  margin:0 auto;
+}
+.card{
+  background:white;
+  border-radius:12px;
+  padding:14px;
+  margin:16px auto;
+  width:92%;
+  box-shadow: var(--card-shadow);
+  text-align:center;
+}
+.card img{ width:100%; height:200px; object-fit:cover; border-radius:8px; }
+.card p{ color:#222; margin:12px 6px 0; line-height:1.5; }
+
+/* CONTACT */
+.contact{
+  background: var(--pink-1);
+  padding:26px 14px 40px;
+  text-align:center;
+}
+.contact h2{ margin-top:0; color:#2b1b35; }
+.contact-form{ max-width:700px; margin:0 auto; }
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.08);
+  outline:none;
+  font-size:14px;
+}
+.contact-form button{
+  background: var(--purple-1);
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  margin-top:8px;
+}
+
+/* FOOTER */
+.site-footer{
+  background: linear-gradient(180deg, #a04abf, var(--purple-1));
+  color:white;
+  text-align:center;
+  padding:30px 12px 44px;
+  position:relative;
+}
+.site-footer p{ margin:8px 0 10px; }
+.site-footer .social{ color:white; font-size:20px; text-decoration:none; display:inline-block; margin-top:6px; }
+
+/* waves footer */
+.wave3{ display:block; width:100%; margin-top:-18px; }
+
+/* ===== responsive ===== */
+@media(min-width:900px){
+  .menu-btn{ display:none; }
+  .side-menu{ left:0; top:56px; width:200px; }
+  .topnav{ padding-left:220px; }
+  .home .hero-inner{ display:flex; align-items:center; gap:24px; text-align:left; padding:36px 40px; }
+  .gambar-oval{ width:340px; margin:0; border-radius:50%;}
+  .home h1{ font-size:34px; color:white; }
+  .about, .galery, .contact{ padding-left:220px; }
+  .card{ width:70%; margin-left:auto; margin-right:auto; }
+}
+@media(min-width:1200px){
+  .card{ width:60%; }
+}
