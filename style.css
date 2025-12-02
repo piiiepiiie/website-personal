@@ -18,14 +18,21 @@ body {
     z-index: 9999;
 }
 
+nav {
+    width: 100%;
+    max-width: 1200px;   /* biar tidak melebar terus */
+    margin: 0 auto;      /* pusatkan */
+    padding: 10px 20px;  /* jarak kiri–kanan */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-btn {
-    position: absolute;
-    right: 20px;  
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer;
-    color: #4a4a4a;
+    color: #4a4a4a;
+    margin-right: 10px;  /* atur jarak biar tidak nempel */
 }
 
 }
