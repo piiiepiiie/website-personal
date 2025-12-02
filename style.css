@@ -20,6 +20,8 @@ body {
 .menu-btn {
     font-size: 24px;
     cursor: pointer;
+    color: #333 !important;
+    font-weight: bold;
 }
 
 .side-menu {
