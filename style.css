@@ -1,109 +1,134 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #ffe99a;
+    background: #ffe6f2;
 }
 
 .topnav {
-    background: #ffe99a;
-    color: #4a4a4a;
-    padding: 15px 25px;
+    background: #ff94c6;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.menu-btn {
-    font-size: 24px;
-    cursor: pointer;
-    color: #333 !important;
+    color: white;
     font-weight: bold;
 }
 
-.side-menu {
-    width: 190px;
-    background: #ffe99a;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -210px;
-    padding-top: 80px;
-    transition: 0.4s;
-    z-index: 9000;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+.menu-btn {
+    font-size: 22px;
+    cursor: pointer;
 }
 
-.side-menu.show {
-    left: 0;
+.side-menu {
+    width: 200px;
+    height: 100vh;
+    background: #ffb6d9;
+    position: fixed;
+    top: 0;
+    left: -230px;
+    padding-top: 70px;
+    transition: 0.4s;
 }
 
 .side-menu a {
     display: block;
     padding: 15px;
-    color: #4a4a4a;
+    color: white;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.side-menu a:hover {
+    background: #ff80c3;
+}
+
+.show {
+    left: 0;
 }
 
 .home {
     text-align: center;
-    padding: 140px 20px 60px;
-    background: #a9d6ff;
+    padding: 60px 20px;
 }
 
 .profile {
-    width: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 10px #ff9ac9;
+}
+
+.home h1 {
+    margin-top: 15px;
+    color: #ff4fa1;
+}
+
+.home p {
+    color: #d63384;
 }
 
 .section {
     padding: 40px 20px;
+}
+
+.section h2 {
     text-align: center;
+    color: #ff4fa1;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #ffb3d9;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.blue {
-    background: #a9d6ff;
-}
-
-.card {
+.bio-table {
     width: 90%;
-    background: white;
-    margin: 15px auto;
-    padding: 12px;
-    border-radius: 12px;
-    border: 2px solid #ffe99a;
-    transition: .3s;
+    max-width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 16px;
 }
 
-.card img {
+.bio-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ffd0e6;
+}
+
+.gallery .card {
+    background: white;
+    width: 90%;
+    max-width: 320px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ffc4dd;
+}
+
+.gallery img {
     width: 100%;
     border-radius: 10px;
 }
 
-.card:hover {
-    transform: scale(1.03);
-}
-
-.ig {
-    font-size: 36px;
-    color: #d62976;
+.gallery p {
+    text-align: center;
+    margin-top: 8px;
+    color: #d63384;
 }
 
 .contact-section {
-    padding: 50px 20px;
-    margin-top: 40px;
-    margin-bottom: 80px; 
-    background: #fffbe6;
     text-align: center;
-    border-radius: 12px;
+}
+
+.ig {
+    font-size: 40px;
+    color: #ff4fa1;
 }
 
 footer {
     text-align: center;
-    padding: 25px;
-    background: #a9d6ff;
-    margin-top: 20px; 
+    padding: 15px;
+    background: #ff94c6;
+    color: white;
+    margin-top: 20px
 }
